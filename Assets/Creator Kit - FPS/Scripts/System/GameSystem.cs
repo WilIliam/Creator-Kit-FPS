@@ -25,6 +25,8 @@ public class GameSystem : MonoBehaviour
     public int DestroyedTarget => m_TargetDestroyed;
     public int Score => m_Score;
 
+    public string WinSceneName;
+
     float m_Timer;
     bool m_TimerRunning = false;
     
@@ -32,6 +34,8 @@ public class GameSystem : MonoBehaviour
     int m_TargetDestroyed;
 
     int m_Score = 0;
+
+    string m_SceneToLoad;
 
     void Awake()
     {
@@ -97,6 +101,9 @@ public class GameSystem : MonoBehaviour
 
     public void FinishRun()
     {
+
+        m_SceneToLoad = WinSceneName;
+
         BGMPlayer.clip = EndGameSound;
         BGMPlayer.loop = false;
         BGMPlayer.Play();
@@ -104,6 +111,8 @@ public class GameSystem : MonoBehaviour
         Controller.Instance.DisplayCursor(true);
         Controller.Instance.CanPause = false;
         FinalScoreUI.Instance.Display();
+
+        SceneManager.LoadScene(m_SceneToLoad);
     }
 
     public void NextLevel()

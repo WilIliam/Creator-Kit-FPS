@@ -48,8 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedOnHit: 0
   TimeToDestroyed: 2.5
-  ReachRadius: 3
-  damage: 10
+  ReachRadius: 50
+  damage: 50
   DestroyedSound: {fileID: 8300000, guid: 4a9a06c9694a13543bb6addd4101fcb1, type: 3}
   PrefabOnDestruction: {fileID: 1329845292236604, guid: 9bba9cf244c53c5439505dfc96fdd11c,
     type: 3}
@@ -95,6 +95,10 @@ PrefabInstance:
       value: Pill
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c69d36fddf2835f468dd3e1782e326dd, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c69d36fddf2835f468dd3e1782e326dd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
       objectReference: {fileID: 0}
@@ -107,6 +111,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c69d36fddf2835f468dd3e1782e326dd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c69d36fddf2835f468dd3e1782e326dd, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -117,14 +125,6 @@ PrefabInstance:
     - target: {fileID: 400000, guid: c69d36fddf2835f468dd3e1782e326dd, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: c69d36fddf2835f468dd3e1782e326dd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: c69d36fddf2835f468dd3e1782e326dd, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c69d36fddf2835f468dd3e1782e326dd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
