@@ -8,11 +8,13 @@ using UnityEditor;
 public class PauseMenu : MonoBehaviour
 {
     public static PauseMenu Instance { get; private set; }
+    public GameObject m_SelectLevel;
 
     void Awake()
     {
         Instance = this;
         gameObject.SetActive(false);
+        m_SelectLevel.SetActive(false);
     }
 
     public void Display()
@@ -24,11 +26,13 @@ public class PauseMenu : MonoBehaviour
 
     public void OpenEpisode()
     {
-        if(LevelSelectionUI.Instance.IsEmpty())
-            return;
+        
+        m_SelectLevel.SetActive(true);
+        // if(LevelSelectionUI.Instance.IsEmpty())
+        //     return;
         
         UIAudioPlayer.PlayPositive();
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
         LevelSelectionUI.Instance.DisplayEpisode();
     }
 

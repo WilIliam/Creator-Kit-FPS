@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Creator Kit - FPS/Scenes/StartMenu.unity
+    guid: ce9c1ebec1e284e49a8e3c96f309c50f
+  - enabled: 1
     path: Assets/Creator Kit - FPS/Scenes/ExampleScene.unity
     guid: cf8af1738c3cb4b488b72c399f7898f8
   - enabled: 1
     path: Assets/Creator Kit - FPS/Scenes/Level 1.unity
     guid: f2b6a8254e425d1458064bf24934bf91
+  - enabled: 1
+    path: Assets/Creator Kit - FPS/Scenes/Last Level.unity
+    guid: 4d80b6b645aadc046a4a622273dc25e1
+  - enabled: 1
+    path: Assets/Creator Kit - FPS/Scenes/GameOver.unity
+    guid: d655b2fba094e9442ad7932184d86403
   m_configObjects: {}

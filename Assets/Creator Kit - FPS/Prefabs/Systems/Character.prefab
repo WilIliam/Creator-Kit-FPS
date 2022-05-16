@@ -445,6 +445,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -456,6 +458,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -468,6 +471,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &1782824343737523952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -488,11 +492,12 @@ MonoBehaviour:
   - {fileID: 8587774576786866763, guid: 760a5cd9833938442ba8a4b54bfa8148, type: 3}
   - {fileID: 521019951643201760, guid: a7112150bc902aa40a065439ad698c01, type: 3}
   - {fileID: 6274258826675327207, guid: 4f2e46d4d4842c849a745f6e82991e57, type: 3}
+  - {fileID: 521019951643201760, guid: 989836b19925c4d40827fe24be16c870, type: 3}
   startingAmmo:
   - ammoType: 0
     amount: 60
   - ammoType: 2
-    amount: 2
+    amount: 5
   MouseSensitivity: 2.4
   PlayerSpeed: 5
   RunningSpeed: 10
@@ -500,6 +505,9 @@ MonoBehaviour:
   FootstepPlayer: {fileID: 4771553560791580875}
   JumpingAudioCLip: {fileID: 8300000, guid: d44cae06e297aa4458bf0a432cdf4f03, type: 3}
   LandingAudioClip: {fileID: 8300000, guid: 80b8397262d56df49828a3b530021dba, type: 3}
+  MaxHeath: 100
+  CurrentHeath: 0
+  healthBar: {fileID: 0}
 --- !u!143 &1782824343737523964
 CharacterController:
   m_ObjectHideFlags: 0
