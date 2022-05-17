@@ -42,8 +42,9 @@ public class StartMenu : MonoBehaviour
     public void OpenEpisode()
     {
         UIAudioPlayer.PlayPositive();
-        m_SelectLevel.SetActive(true);
         gameObject.SetActive(false);
+        m_SelectLevel.gameObject.SetActive(true);
+        m_SelectLevel.gameObject.SetActive(true);
     }
 
 

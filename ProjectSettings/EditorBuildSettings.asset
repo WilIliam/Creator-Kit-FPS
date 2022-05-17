@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Creator Kit - FPS/Scenes/GameOver.unity
     guid: d655b2fba094e9442ad7932184d86403
+  - enabled: 1
+    path: Assets/Creator Kit - FPS/Scenes/Win.unity
+    guid: e2167f90d3bdff9429d186de334c621a
   m_configObjects: {}

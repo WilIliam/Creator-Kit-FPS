@@ -179,7 +179,7 @@ public class GameSystem : MonoBehaviour
         m_Score = 0;
 
         GameSystemInfo.Instance.UpdateScore(0);
-        LevelSelectionUI.Instance.Init();
+        // LevelSelectionUI.Instance.Init();
     }
 
     void Update()

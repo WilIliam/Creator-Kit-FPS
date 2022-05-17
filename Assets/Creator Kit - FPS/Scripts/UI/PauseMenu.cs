@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static PauseMenu Instance { get; private set; }
     public GameObject m_SelectLevel;
+    public GameObject m_PauseLevel;
 
     void Awake()
     {
@@ -33,7 +34,7 @@ public class PauseMenu : MonoBehaviour
         
         UIAudioPlayer.PlayPositive();
         //gameObject.SetActive(false);
-        LevelSelectionUI.Instance.DisplayEpisode();
+        // LevelSelectionUI.Instance.DisplayEpisode();
     }
 
     public void ReturnToGame()
@@ -41,6 +42,8 @@ public class PauseMenu : MonoBehaviour
         UIAudioPlayer.PlayPositive();
         GameSystem.Instance.StartTimer();
         gameObject.SetActive(false);
+        m_PauseLevel.gameObject.SetActive(false);
+        m_SelectLevel.gameObject.SetActive(false);
         Controller.Instance.DisplayCursor(false);
     }
 

@@ -26,7 +26,7 @@ public class SelectLevel : MonoBehaviour
     void Start()
     {
         Instance = this;
-        m_StartMenu.SetActive(false);
+        m_StartMenu.gameObject.SetActive(false);
     }
 
 
@@ -50,9 +50,10 @@ public class SelectLevel : MonoBehaviour
     }
 
     public void BackToMenu(){
-        UIAudioPlayer.PlayNegative();
+        UIAudioPlayer.PlayPositive();
         gameObject.SetActive(false);
-        SceneManager.LoadScene("StartMenu");
+        gameObject.SetActive(false);
+        m_StartMenu.gameObject.SetActive(true);
     }
     #endregion
 }

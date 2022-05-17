@@ -1482,7 +1482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Distance: 7
   m_Speed: 5
-  m_Damage: 0
+  m_Damage: 10
   m_Player: {fileID: 2004909260}
 --- !u!4 &469014115 stripped
 Transform:
@@ -2153,6 +2153,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 176965120234909008, guid: 547e1bb5b288bc14187ab3bdf87891f6,
         type: 3}
+      propertyPath: m_Damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 176965120234909008, guid: 547e1bb5b288bc14187ab3bdf87891f6,
+        type: 3}
       propertyPath: m_Player
       value: 
       objectReference: {fileID: 2004909260}
@@ -2782,7 +2787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Distance: 7
   m_Speed: 5
-  m_Damage: 0
+  m_Damage: 10
   m_Player: {fileID: 2004909260}
 --- !u!1 &670547377
 GameObject:
@@ -6106,6 +6111,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 176965120234909008, guid: 547e1bb5b288bc14187ab3bdf87891f6,
         type: 3}
+      propertyPath: m_Damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 176965120234909008, guid: 547e1bb5b288bc14187ab3bdf87891f6,
+        type: 3}
       propertyPath: m_Player
       value: 
       objectReference: {fileID: 2004909260}
@@ -7056,7 +7066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Distance: 7
   m_Speed: 5
-  m_Damage: 0
+  m_Damage: 10
   m_Player: {fileID: 2004909260}
 --- !u!1001 &1746552714
 PrefabInstance:
@@ -7528,7 +7538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Distance: 7
   m_Speed: 5
-  m_Damage: 0
+  m_Damage: 10
   m_Player: {fileID: 2004909260}
 --- !u!4 &1807610052 stripped
 Transform:
@@ -8092,6 +8102,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1237241343}
     m_Modifications:
+    - target: {fileID: 176965120234909008, guid: 547e1bb5b288bc14187ab3bdf87891f6,
+        type: 3}
+      propertyPath: m_Damage
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 176965120234909008, guid: 547e1bb5b288bc14187ab3bdf87891f6,
         type: 3}
       propertyPath: m_Player
